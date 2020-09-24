@@ -10,6 +10,7 @@ public class Singleton5 {
 
     }
     public static Singleton5 getInstance(){
+		if(instance == null){
         //同步
         //不是最优版本  后面线程不需要的 已经new了 安全问题已经解决了  锁  有人有用了 直接用
         synchronized (Singleton5.class){
@@ -21,7 +22,7 @@ public class Singleton5 {
                 }
                 instance = new Singleton5();
             }
-        }
+        }}
 
         return instance;
     }
