@@ -35,6 +35,17 @@
         this.size = function () {
             return items.length
         }
+
+        // toString方法
+        Stack.prototype.toString = function (){
+            //20 10 12 8 7
+            var resultString = ''
+            for (var i = 0;i < this.items.length; i++){
+                resultString += this.items[i] + ' ';
+            }
+            return resultString;
+        }
+
     }
 
     // 创建队列对象
