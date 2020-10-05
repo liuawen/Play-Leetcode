@@ -11,7 +11,8 @@ public class Mgr05 {
 
     private Mgr05() {
     }
-
+    //多个线程 还没有执行到 synchronized 某个线程执行了一次 线程又执行了一次
+    // 申请到了这把锁 释放了 拿到了这把锁 又执行了
     public static Mgr05 getInstance() {
         if (INSTANCE == null) {
             //妄图通过减小同步代码块的方式提高效率，然后不可行

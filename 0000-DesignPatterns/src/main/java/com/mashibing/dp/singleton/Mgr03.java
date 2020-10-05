@@ -28,9 +28,21 @@ public class Mgr03 {
     }
 
     public static void main(String[] args) {
-        for(int i=0; i<100; i++) {
+/*        for(int i=0; i<100; i++) {
             new Thread(()->
                 System.out.println(Mgr03.getInstance().hashCode())
+            ).start();
+        }*/
+        //只有一个方法  也知道你就一个接口 传递一个 Runnable 只有一句话 还可以把大括号给去掉
+        //线程执行太快了   没有其它线程打断
+        for(int i=0; i<100; i++) {
+            new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    //xxx
+                    System.out.println(Mgr03.getInstance().hashCode());
+                }
+            }
             ).start();
         }
     }

@@ -5,9 +5,12 @@ package com.mashibing.dp.singleton;
  * 也称懒汉式
  * 虽然达到了按需初始化的目的，但却带来线程不安全的问题
  * 可以通过synchronized解决，但也带来效率下降
+ *
+ * 反序列化问题 
  */
 public class Mgr06 {
     private static volatile Mgr06 INSTANCE; //JIT
+//    private static  Mgr06 INSTANCE; //要加上volatile
 
     private Mgr06() {
     }

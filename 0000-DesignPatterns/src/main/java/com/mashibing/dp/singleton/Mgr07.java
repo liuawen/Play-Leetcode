@@ -4,6 +4,9 @@ package com.mashibing.dp.singleton;
  * 静态内部类方式
  * JVM保证单例
  * 加载外部类时不会加载内部类，这样可以实现懒加载
+ * 完美写法之一  第一 有点小毛病
+ * 调用getInstance加载
+ * JVM加载class只加载一次 内部保证   加载一次 Holder也只加载 只有这一个对象
  */
 public class Mgr07 {
 

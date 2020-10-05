@@ -2,6 +2,7 @@ package com.mashibing.dp.singleton;
 
 /**
  * 跟01是一个意思
+ * 静态语句块初始化
  */
 public class Mgr02 {
     private static final Mgr02 INSTANCE;
