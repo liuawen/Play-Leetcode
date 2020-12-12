@@ -7,6 +7,7 @@ import java.util.Set;
  */
 public class Solution2 {
     //题中提示中数组的大小和长度都有了限制，所以我们还可以使用数组
+
     public boolean uniqueOccurrences(int[] arr) {
         int[] count = new int[2001];
         for (int i = 0; i < arr.length; i++) {
