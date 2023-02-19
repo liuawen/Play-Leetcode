@@ -7,7 +7,7 @@ package ch03;
 public class ThreadStudentClient {
     public static void main(String[] args) {
         Punishment punishment = new Punishment(100,"internationalization");
-        ThreadStudent threadStudent = new ThreadStudent("小明",punishment);
+//        ThreadStudent threadStudent = new ThreadStudent("小明",punishment);
 //        threadStudent.start();
 //        threadStudent.copyWord();
 

@@ -4,7 +4,7 @@ package cn.liuawen.ch02;
  * @author Liu Awen Email:willowawen@gmail.com
  * @create 2020-10-25
  */
-public class VolatileCanStop implements Runnable {
+public class VolatileCanStop implements java.lang.Runnable  {
 
     private volatile boolean canceled = false;
 
@@ -28,8 +28,8 @@ public class VolatileCanStop implements Runnable {
         VolatileCanStop r = new VolatileCanStop();
         Thread thread = new Thread(r);
         thread.start();
-//        Thread.sleep(3000);
-        Thread.sleep(1000);
+        Thread.sleep(3000);
+//        Thread.sleep(1000);
         r.canceled = true;
     }
 }

@@ -5,4 +5,9 @@ package cn.liuawen.ch01;
  * @create 2021-01-12
  */
 public class Hello {
+    public static void main(String[] args) {
+        int a = BillEnumCollection.PreSigns.notPre.VALUE;
+        System.out.println(a);
+    }
 }
+

@@ -11,5 +11,6 @@ public class StudentClient {
         student.copyWord();
         //main函数所在的线程
         //main线程-小明一共抄写了100次！
+        System.out.println("Another thread will finish the punishment。 main thread is finished" );
     }
 }
