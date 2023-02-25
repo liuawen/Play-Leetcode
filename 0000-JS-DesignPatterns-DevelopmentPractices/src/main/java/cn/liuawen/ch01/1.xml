@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ufinterface roottag="voucher" billtype="D1" replace="Y" isexchange="Y" sender="erp" receiver="0101" proc="add">
+    <voucher id="03202100402">
+        <voucher_head>
+            <djdl>yf</djdl>
+            <sysid>1</sysid>
+            <initFlag>N</initFlag>
+            <billDate>2021-02-24</billDate>
+            <effectdate>2021-02-24</effectdate>
+            <inputOp>erp</inputOp>
+            <saleType>RM01</saleType>
+            <checkman>wur</checkman>
+            <billstatus>2</billstatus>
+            <freeitem30>03202100402</freeitem30>
+            <zgyf>0</zgyf>
+            <scomment>徐文荣口述、孙是炎整理</scomment>
+            <onlyid>03202100402</onlyid>
+            <prepay>N</prepay>
+            <corp>0101</corp>
+            <businessType>F1-GFJS</businessType>
+        </voucher_head>
+        <voucher_body>
+            <entry>
+                <customer>NB05</customer>
+                <inventoryId>A20200288</inventoryId>
+                <credit_original_noTax>2826.0000</credit_original_noTax>
+                <invoicebillno>03202100402</invoicebillno>
+                <freeitem1></freeitem1>
+                <pj_jsfs>04</pj_jsfs>
+                <dfyhzh>0200004109067002779</dfyhzh>
+                <onlyid>03202100402</onlyid>
+                <deptid>314</deptid>
+                <employeeId>R00027</employeeId>
+                <sum_direction>-1</sum_direction>
+                <digest>外校费</digest>
+                <accsubjId>CZ003</accsubjId>
+                <job>A20200288</job>
+                <currencyId>CNY</currencyId>
+                <original_exchange_rate>1</original_exchange_rate>
+                <credit_original_sum>2826.0000</credit_original_sum>
+                <credit_local_sum>2826.0000</credit_local_sum>
+                <tax_rate>0</tax_rate>
+                <credit_original_Tax>0.0000</credit_original_Tax>
+                <credit_local_Tax>0.0000</credit_local_Tax>
+                <credit_local_noTax>2826.0000</credit_local_noTax>
+                <original_balance>2826.0000</original_balance>
+                <local_balance>2826.0000</local_balance>
+                <object>1</object>
+                <pay_agreementId>60</pay_agreementId>
+                <freeitem29>03202100402</freeitem29>
+            </entry>
+        </voucher_body>
+    </voucher>
+</ufinterface>
